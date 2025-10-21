@@ -1,4 +1,15 @@
 {
   "python-envs.defaultEnvManager": "ms-python.python:pipenv",
-  "python-envs.pythonProjects": []
+  "python-envs.pythonProjects": [],
+  "pylint.args": [
+    "--load-plugins",
+    "pylint_django",
+    "--load-plugins",
+    "pylint_django.checkers.migrations",
+    "--disable=C0114, C0115, W0222",
+    "--disable=imported-auth-user",
+    "--disable=invalid-name",
+    "--disable=line-too-long",
+    "--django-settings-module=django_blog.settings"
+  ]
 }

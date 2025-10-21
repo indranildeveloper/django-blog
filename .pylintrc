@@ -1,0 +1,5 @@
+[MASTER]
+load-plugins=pylint_django
+
+[pylint-django]
+django-settings-module=django_blog.settings
